@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .navbar {
+    @apply flex justify-between w-full h-screen;
+  }
+  .left {
+    @apply w-1/2 bg-[#000000];
+  }
+  .right {
+    @apply w-1/2 bg-[#1E1E1E];
+  }
+  .center {
+    @apply flex justify-center items-center h-full w-full;
+  }
+  .bg-left {
+    background: linear-gradient(180deg, #000000 0%, #353535 100%);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
