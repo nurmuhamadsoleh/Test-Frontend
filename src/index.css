@@ -4,13 +4,13 @@
 
 @layer components {
   .navbar {
-    @apply flex justify-between w-full h-screen;
+    @apply flex justify-between w-full h-full;
   }
   .left {
-    @apply w-1/2 bg-[#000000];
+    @apply w-3/6 lg:bg-[#000000];
   }
   .right {
-    @apply w-1/2 bg-[#1E1E1E];
+    @apply w-3/6 lg:bg-[#1E1E1E];
   }
   .center {
     @apply flex justify-center items-center h-full w-full;
@@ -25,8 +25,34 @@
       #00fbb0 0%,
       rgba(9, 9, 9, 0.1) 99.9%
     );
+    height: 183px;
   }
   .gradientb {
-    background: linear-gradient(252.62deg, #00C2FF -0.1%, rgba(0, 0, 0, 0.1) 100%);
+    background: linear-gradient(
+      252.62deg,
+      #00c2ff -0.1%,
+      rgba(0, 0, 0, 0.1) 100%
+    );
+    height: 183px;
   }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
 }

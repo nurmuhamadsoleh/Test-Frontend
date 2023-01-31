@@ -13,7 +13,7 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link to="/" className={`${pathname == "/date" ? "font-bold" : ""}`}>
+          <Link to="/" className={`${pathname == "/" ? "font-bold" : ""}`}>
             {moment().format("YYYY-MM-DD")};
           </Link>
         </li>
